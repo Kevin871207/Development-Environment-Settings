@@ -3,9 +3,9 @@ Require `Fonts`.
 1. [Download](https://code.visualstudio.com/Download) and install **Visual Studio Code**.
 2. Open **Visual Studio Code** and install plugins:
 
-  | Title | Name |
-  | -- | -- |
-  | vscode-icons | `robertohuertasm.vscode-icons` |
+    | Title | Name |
+    | -- | -- |
+    | vscode-icons | `robertohuertasm.vscode-icons` |
 
 3. Add these rules to user settings of **Visual Studio Code**:
     ```json
