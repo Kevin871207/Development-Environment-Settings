@@ -1,5 +1,5 @@
 # Visual Studio Code
-Require `Fonts`.
+Require [Fonts](../Fonts.md).
 1. [Download](https://code.visualstudio.com/Download) and install **Visual Studio Code**.
 2. Open **Visual Studio Code** and install plugins:
 
