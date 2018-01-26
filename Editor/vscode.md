@@ -7,7 +7,7 @@ Require `Fonts`.
   | -- | -- |
   | vscode-icons | `robertohuertasm.vscode-icons` |
 
-3. Add these rules to settings of Visual Studio Code:
+3. Add these rules to settings of **Visual Studio Code**:
 ```json
 {
 	"editor.fontFamily": "'Fira Code', 'Noto Sans Mono CJK TC', monospace",
