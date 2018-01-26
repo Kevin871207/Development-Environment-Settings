@@ -7,19 +7,17 @@ Require `Fonts`.
   | -- | -- |
   | vscode-icons | `robertohuertasm.vscode-icons` |
 
-3. Add these rules to settings of **Visual Studio Code**:
-```json
-{
-	"editor.fontFamily": "'Fira Code', 'Noto Sans Mono CJK TC', monospace",
-	"editor.fontSize": 15,
-	"editor.insertSpaces": false,
-	"editor.lineHeight": 18,
-	"editor.rulers": [80, 160, 240],
-	"editor.detectIndentation": false,
-	"editor.roundedSelection": false,
-	"editor.smoothScrolling": true,
-	"editor.fontLigatures": true,
-	"editor.renderWhitespace": "all",
-	"workbench.iconTheme": "vscode-icons"
-}
-```
+3. Add these rules to user settings of **Visual Studio Code**:
+    ```json
+    "editor.fontFamily": "'Fira Code', 'Noto Sans Mono CJK TC', monospace",
+    "editor.fontSize": 15,
+    "editor.insertSpaces": false,
+    "editor.lineHeight": 18,
+    "editor.rulers": [80, 160, 240],
+    "editor.detectIndentation": false,
+    "editor.roundedSelection": false,
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "workbench.iconTheme": "vscode-icons",
+    ```
