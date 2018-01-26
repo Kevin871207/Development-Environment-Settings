@@ -24,8 +24,7 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     ```json
     "rust-client.channel": "stable-x86_64-pc-windows-gnu",
     ```
-## Start a project
-1. Save this script to start a project conveniently.
+9. Save this script to start a project conveniently.
   * Windows
     
     Named `create.cmd`
@@ -79,9 +78,11 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     Named `create.sh`
     
     (Unfinished...)
-2. Open it and input project name to create a project.
-3. Open the project directory with **Visual Studio Code**.
-4. Setting `tasks.json` in **Visual Studio Code**:
+    
+## Start a project
+1. Open `create.cmd` or `create.sh` and input project name to create a project.
+2. Open the project directory with **Visual Studio Code**.
+3. Setting `tasks.json` in **Visual Studio Code**:
     ```json
     {
     	"version": "2.0.0",
@@ -113,7 +114,7 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     			"cwd": "${workspaceRoot}",
     			"preLaunchTask": "cargo build"
     		},
-			// Require this if OS is Windows
+		/* Require this if OS is Windows */
     		{
     			"name": "Debug on GDB",
     			"type": "gdb",
