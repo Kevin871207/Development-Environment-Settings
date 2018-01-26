@@ -1,5 +1,5 @@
 # Rust
-Require `Editor/vscode`, `Compiler/LLVM`,and `Compiler/MinGW` if OS is Windows.
+Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/MinGW.md),and [Compiler/MinGW](../Compiler/MinGW.md) if OS is Windows.
 1. [Download](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe) and run **rustup** initializer.
 2. In **rustup** initializer, choose 2 to customize installation and set `default host triple` to `x86_64-pc-windows-gnu` if it is not.
 3. In **rustup** initializer, choose 1 to install it.
