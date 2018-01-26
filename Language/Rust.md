@@ -114,7 +114,7 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     			"cwd": "${workspaceRoot}",
     			"preLaunchTask": "cargo build"
     		},
-		/* Require this if OS is Windows */
+		        /* Require this if OS is Windows */
     		{
     			"name": "Debug on GDB",
     			"type": "gdb",
