@@ -12,8 +12,8 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
           move "C:\Users\<user name>\.cargo" "C:\Program Files\Rust\Cargo"
           move "C:\Users\<user name>\.rustup" "C:\Program Files\Rust\rustup"
           ```
-      2. Add `C:\Program Files\Rust\Cargo` to environment variable `CARGO_HOME`.
-      3. Add `C:\Program Files\Rust\rustup` to environment variable `RUSTUP_HOME`.
+      2. Add environment variable `CARGO_HOME` with value `C:\Program Files\Rust\Cargo`.
+      3. Add environment variable `RUSTUP_HOME` with value `C:\Program Files\Rust\rustup`.
       4. Change `C:\Users\<user name>\.cargo\bin` to `C:\Program Files\Rust\Cargo\bin` in environment variable `PATH`.
     * UNIX or UNIX-like system
       1. (Unfinished...)
