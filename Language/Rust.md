@@ -5,18 +5,18 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
 2. In **rustup** initializer, choose 2 to customize installation and set `default host triple` to `x86_64-pc-windows-gnu` if it is not.
 3. In **rustup** initializer, choose 1 to install it.
 4. Move all directories about **Rust** to program directory.
-  * Windows
-    1. Run `cmd.exe` as administrator and run these script:
-        ```cmd
-        md "C:\Program Files\Rust\"
-        move "C:\Users\<user name>\.cargo" "C:\Program Files\Rust\Cargo"
-        move "C:\Users\<user name>\.rustup" "C:\Program Files\Rust\rustup"
-        ```
-    2. Add `C:\Program Files\Rust\Cargo` to environment variable `CARGO_HOME`.
-    3. Add `C:\Program Files\Rust\rustup` to environment variable `RUSTUP_HOME`.
-    3. Change `C:\Users\<user name>\.cargo\bin` to `C:\Program Files\Rust\Cargo\bin` in environment variable `PATH`.
-  * UNIX or UNIX-like system
-    1. (Unfinished...)
+    * Windows
+      1. Run `cmd.exe` as administrator and run these script:
+          ```cmd
+          md "C:\Program Files\Rust\"
+          move "C:\Users\<user name>\.cargo" "C:\Program Files\Rust\Cargo"
+          move "C:\Users\<user name>\.rustup" "C:\Program Files\Rust\rustup"
+          ```
+      2. Add `C:\Program Files\Rust\Cargo` to environment variable `CARGO_HOME`.
+      3. Add `C:\Program Files\Rust\rustup` to environment variable `RUSTUP_HOME`.
+      4. Change `C:\Users\<user name>\.cargo\bin` to `C:\Program Files\Rust\Cargo\bin` in environment variable `PATH`.
+    * UNIX or UNIX-like system
+      1. (Unfinished...)
 5. Run script `cargo install racer` as administrator or superuser to install **Racer**.
 6. Run script `rustup component add rls-preview rust-analysis rust-src` as administrator or superuser to install **Rust Language Server**.
 7. Open **Visual Studio Code** and install plugin **Rust (rls)** `rust-lang.rust`.
@@ -25,8 +25,8 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     "rust-client.channel": "stable-x86_64-pc-windows-gnu",
     ```
 9. Save these script to start a project conveniently.
-  * [create.cmd](Rust/create.cmd) on Windows
-  * [create.sh](Rust/create.sh) on UNIX or UNIX-like system (Unfinished...)
+    * [create.cmd](Rust/create.cmd) on Windows
+    * [create.sh](Rust/create.sh) on UNIX or UNIX-like system (Unfinished...)
 ## Start a project
 1. Open `create.cmd` or `create.sh` and input project name to create a project.
 2. Open the project directory with **Visual Studio Code**.
