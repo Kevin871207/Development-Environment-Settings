@@ -32,7 +32,7 @@ if exist %name% (
 )
 
 :init
-set /p init="Is Initialize : (y|n) 
+set /p init="Is Initialize : (y|n) "
 if "%init%" == "Y" ( set "init=y" )
 if "%init%" == "N" ( set "init=n" )
 if "%init%" == "y" ( goto cargo_init ) else ( if "%init%" == "n" ( goto name ) else ( goto init ) )
