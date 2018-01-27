@@ -15,7 +15,7 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     2. Add `C:\Program Files\Rust\Cargo` to environment variable `CARGO_HOME`.
     3. Add `C:\Program Files\Rust\rustup` to environment variable `RUSTUP_HOME`.
     3. Change `C:\Users\<user name>\.cargo\bin` to `C:\Program Files\Rust\Cargo\bin` in environment variable `PATH`.
-  * UNIX and UNIX-like system
+  * UNIX or UNIX-like system
     1. (Unfinished...)
 5. Run script `cargo install racer` as administrator or superuser to install **Racer**.
 6. Run script `rustup component add rls-preview rust-analysis rust-src` as administrator or superuser to install **Rust Language Server**.
@@ -62,7 +62,7 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     			"cwd": "${workspaceRoot}",
     			"preLaunchTask": "cargo build"
     		},
-		        /* Require this if OS is Windows */
+		        /* Require this if OS is Windows and project probably need standard input */
     		{
     			"name": "Debug on GDB",
     			"type": "gdb",
@@ -75,4 +75,5 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     	]
     }
     ```
-    
+### Note : Reason why should use GDB if OS is Windows
+**LLDB** is better than **GDB** on debuging **Rust** code, because it does not have problems when argumunts are unicode and variables is more readable than **GDB**. But **Visual Studio Code** plugin **LLDB Debugger** `vadimcn.vscode-lldb` seemingly does not support standard input on Windows, so when the project probably need standard input choose **GDB** to debug it.
