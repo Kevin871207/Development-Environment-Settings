@@ -24,61 +24,9 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     ```json
     "rust-client.channel": "stable-x86_64-pc-windows-gnu",
     ```
-9. Save this script to start a project conveniently.
-  * Windows
-    
-    Named `create.cmd`
-    ```cmd
-    @echo off
-    chcp 65001
-    cls
-    
-    :name
-    set /p name="Project Name  : "
-    :exec
-    set /p exec="Is Executable : (y|n) "
-    
-    if "%exec%" == "Y" ( set "exec=y" )
-    if "%exec%" == "N" ( set "exec=n" )
-    if "%exec%" == "y" ( set "exec=--bin" ) else ( if "%exec%" == "n" ( set "exec=" ) else ( goto exec ) )
-    
-    if exist %name% (
-    	( dir /b /a "%name%" | findstr . ) > nul && (
-    		echo Warning : "%name%" folder exists and not empty.
-    		goto init
-    	) || (
-    		:cargo_init
-    		if exist %name%\Cargo.toml (
-    			echo del /q /f .\%name%\Cargo.toml
-    			del /q /f .\%name%\Cargo.toml
-    		)
-    		echo cargo init %name%
-    		cargo init %name%
-    		goto end
-    	)
-    ) else (
-    	echo cargo new %name% %exec%
-    	cargo new %name% %exec%
-    	goto end
-    )
-    
-    :init
-    set /p init="Is Initialize : (y|n) "
-    if "%init%" == "Y" ( set "init=y" )
-    if "%init%" == "N" ( set "init=n" )
-    if "%init%" == "y" ( goto cargo_init ) else ( if "%init%" == "n" ( goto name ) else ( goto init ) )
-    
-    :end
-    if %errorlevel% neq 0 ( goto name )
-    
-    PAUSE
-    ```
-  * UNIX and UNIX-like system
-    
-    Named `create.sh`
-    
-    (Unfinished...)
-    
+9. Save these script to start a project conveniently.
+  * [create.cmd](Rust/create.cmd) on Windows
+  * [create.sh](Rust/create.sh) on UNIX or UNIX-like system (Unfinished...)
 ## Start a project
 1. Open `create.cmd` or `create.sh` and input project name to create a project.
 2. Open the project directory with **Visual Studio Code**.
