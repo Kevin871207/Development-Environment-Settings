@@ -1,5 +1,5 @@
 # Rust
-Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.md),and [Compiler/MinGW](../Compiler/MinGW.md) if OS is Windows.
+Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.md),and [Compiler/MinGW](../Compiler/MinGW.md) if OS is Windows and project probably need standard input.
 ## Install and config
 1. [Download](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe) and run **rustup** initializer.
 2. In **rustup** initializer, choose 2 to customize installation and set `default host triple` to `x86_64-pc-windows-gnu` if it is not.
@@ -75,5 +75,5 @@ Require [Editor/vscode](../Editor/vscode.md), [Compiler/LLVM](../Compiler/LLVM.m
     	]
     }
     ```
-### Note : Reason why should use GDB if OS is Windows
-**LLDB** is better than **GDB** on debuging **Rust** code, because it does not have problems when argumunts are unicode and variables is more readable than **GDB**. But **Visual Studio Code** plugin **LLDB Debugger** `vadimcn.vscode-lldb` seemingly does not support standard input on Windows, so when the project probably need standard input choose **GDB** to debug it.
+### Note : Reason why should use GDB if OS is Windows and project probably need standard input
+**LLDB** is better than **GDB** on debuging **Rust** code, because it does not have problems when argumunts are unicode and variable watcher is more readable than when using **GDB** to debug. But **Visual Studio Code** plugin **LLDB Debugger** `vadimcn.vscode-lldb` seemingly does not support standard input on Windows, so when the project probably need standard input choose **GDB** to debug it.
