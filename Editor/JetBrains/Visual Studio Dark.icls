@@ -6,7 +6,7 @@
     <option name="EDITOR_FONT_SIZE" value="15" />
   </font>
   <font>
-    <option name="EDITOR_FONT_NAME" value="Noto Sans Mono CJK TC Regular" />
+    <option name="EDITOR_FONT_NAME" value="Noto Sans Mono CJK TC" />
     <option name="EDITOR_FONT_SIZE" value="15" />
   </font>
   <option name="EDITOR_LIGATURES" value="true" />
@@ -15,7 +15,7 @@
     <option name="EDITOR_FONT_SIZE" value="15" />
   </console-font>
   <console-font>
-    <option name="EDITOR_FONT_NAME" value="Noto Sans Mono CJK TC Regular" />
+    <option name="EDITOR_FONT_NAME" value="Noto Sans Mono CJK TC" />
     <option name="EDITOR_FONT_SIZE" value="15" />
   </console-font>
   <option name="CONSOLE_LIGATURES" value="true" />
@@ -103,6 +103,7 @@
         <option name="FOREGROUND" value="57a64a" />
       </value>
     </option>
+    <option name="CSS.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="c8c8c8" />
@@ -357,12 +358,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="GROOVY_KEYWORD">
-      <value>
-        <option name="FOREGROUND" value="43" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="344134" />
@@ -392,6 +387,7 @@
         <option name="FOREGROUND" value="9876aa" />
       </value>
     </option>
+    <option name="JAVA_KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
     <option name="JS$GLOBAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="b610d3" />
